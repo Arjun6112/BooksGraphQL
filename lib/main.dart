@@ -112,6 +112,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           author: _authorController.text,
                           year: int.parse(_yearController.text.toString()));
                       _load();
+                      _authorController.clear();
+                      _titleController.clear();
+                      _yearController.clear();
                     },
                   );
                 });

@@ -23,7 +23,18 @@ class MyAlertBox extends StatelessWidget {
     return AlertDialog(
       backgroundColor: Colors.grey[900],
       content: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
+          const Text(
+            "Add a Book",
+            style: TextStyle(
+              fontSize: 30,
+              color: Colors.white,
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
           TextField(
             controller: titlecontroller,
             style: const TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
@@ -66,9 +77,9 @@ class MyAlertBox extends StatelessWidget {
                   borderSide: BorderSide(color: Colors.white)),
             ),
           ),
-          const SizedBox(
-            height: 10,
-          ),
+          // const SizedBox(
+          //   height: 10,
+          // ),
           // TextField(
           //   controller: idcontroller,
           //   style: const TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
